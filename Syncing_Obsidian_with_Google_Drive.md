@@ -46,8 +46,8 @@ Setup Sync Command
 Create a script file (e.g., sync_obsidian.sh) and open it in a text editor.
 Add the following command to sync your local directory with your Google Drive folder:
 ```bash
-rclone copy remote_name:path/to/GoogleDriveFolder ~/Obsidian
-rclone sync ~/Obsidian remote_name:path/to/GoogleDriveFolder
+rclone copy ~/Obsidian remote_name:path/to/GoogleDriveFolder
+rclone sync remote_name:path/to/GoogleDriveFolder ~/Obsidian
 ```
 Replace `remote_name` with the name you gave your remote connection during the rclone configuration, and `path/to/GoogleDriveFolder` with the path to the folder you created in Google Drive.
 
